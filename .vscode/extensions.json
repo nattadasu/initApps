@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "ms-vscode.powershell",
+        "rechinformatica.rech-editor-batch"
+    ],
+    "unwantedRecommendations": [
+        "vscode.bat"
+    ]
+}
