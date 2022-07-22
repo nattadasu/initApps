@@ -1,0 +1,13 @@
+[*]
+charset =  utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[**.ps1]
+charset = utf-8-bom
+tab_width = 4
+indent_style = space
+
+[Linux]
+tab_width = 2
