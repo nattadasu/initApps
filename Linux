@@ -1,0 +1,69 @@
+#!/bin/bash
+# -*- coding: utf-8 -*-
+
+exit 1 # exit due to script is not ready yet
+
+# check if the user is root
+if [[ "${UID}" -ne 0 ]]; then
+  echo 'Must execute with sudo or root' >&2
+  exit 1
+fi
+
+# check if apt-get available, if not exit
+if [[ ! -x $(which apt-get) ]]; then
+  echo "
+  apt-get not found, probably you are not using Ubuntu/Debian derivative
+  I'm personally sorry if you're using other distro." >&2
+  exit 1
+fi
+
+# Update and upgrade packages from apt-get
+echo "Updating packages..."
+sudo apt-get update
+sudo apt-get upgrade -y
+
+# check if pacstall is available, if not install
+if [[ ! -x $(which pacstall) ]]; then
+  echo "Installing pacstall..."
+  bash -c '$(curl -fsSL https://git.io/JsADh || wget -q https://git.io/JsADh -O -)'
+fi
+
+# check if nala is available, if not install via pacstall
+if [[ ! -x $(which nala) ]]; then
+  echo "Installing nala..."
+  pacstall -I nala-deb
+fi
+
+# check if flatpak is available, if not install
+if [[ ! -x $(which flatpak) ]]; then
+  echo "Installing flatpak..."
+  sudo apt install flatpak gnome-software-plugin-flatpak
+fi
+
+# upgrade snap packages if available, if not install snap
+if [[ -x $(which snap) ]]; then
+  echo "Upgrading snap packages..."
+  sudo snap refresh
+else
+  echo "Installing snap..."
+  sudo apt install snapd snap-store
+fi
+
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+# Add ppa
+# echo "Adding ppas..."
+# declare -a ppa_list
+# ppa_list=(
+#   ppa:
+# )
+# for ppa in ppa_list; do
+#   sudo add-apt-repository "${ppa}"
+# done
+
+# Install packages from following array with nala
+echo "Installing packages with nala..."
+declare -a nala_packages
+nala_packages=()
+
+nala install ${nala_packages[*]}
