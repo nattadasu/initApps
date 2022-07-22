@@ -1,7 +1,9 @@
 {
     "recommendations": [
         "ms-vscode.powershell",
-        "rechinformatica.rech-editor-batch"
+        "rechinformatica.rech-editor-batch",
+        "rpinski.shebang-snippets",
+        "EditorConfig.EditorConfig"
     ],
     "unwantedRecommendations": [
         "vscode.bat"
