@@ -1,56 +1,86 @@
+﻿#!/usr/bin/env pwsh
+
 #############
 # Functions #
 #############
+
+function Write-None {
+    Write-Host ""
+}
 
 function Invoke-ScoopBuckets {
     scoop update
     scoop bucket add extras
     scoop bucket add nonportable
+    scoop bucket add nerd-fonts
 }
 
 #############
 
+# Skip if not on Windows
+if (-not ($IsWindows)) {
+    Write-None
+    Write-Host "This script only works on Windows." -ForegroundColor Red
+    exit 1
+}
+
 Write-Host "nattadasu's Personal First-Run OS Setup"
 Write-Host "======================================="
 
-Write-Host "This script will install using WinGet, Chocolatey, Scoop, and PowerShell's Invoke-WebRequest."
+Write-None
+Write-Host "This script will install using winget, Chocolatey, Scoop, and PowerShell's Invoke-WebRequest." -ForegroundColor Yellow
 $Prompt = Read-Host -Prompt "Do you agree? (y/n)"
 
 if ($Prompt -eq "n") {
-    Write-Host "Exiting..."
-    exit
+    Write-Host "Exiting..." -ForegroundColor Red
+    exit 1
 }
 
 # Check if user run the script as admin, otherwise exit
 if ([Security.Principal.WindowsIdentity]::GetCurrent().Groups -contains 'S-1-5-32-544') {
-    if (Get-Command "scoop" -ErrorAction SilentlyContinue) {} else {
-        Write-Host "If you want to install Scoop, please rerun the script as non-admin." -ForegroundColor Yellow
+    if (-not (Get-Command "scoop" -ErrorAction SilentlyContinue)) {
+        Write-Host "If you want to install Scoop, please rerun the script as non-admin." -ForegroundColor DarkYellow
     }
 } else {
+    Write-None
     # Check if scoop is installed, if not, install it
     if (Get-Command "scoop" -ErrorAction SilentlyContinue) {
-        Write-Host Scoop is installed
+        Write-Host "Scoop is installed" -ForegroundColor Green
         Invoke-ScoopBuckets
     } else {
-        Write-Host "Installing Scoop..."
+        Write-Host "Installing Scoop..." -ForegroundColor Blue
         Invoke-RestMethod -useb get.scoop.sh | Invoke-Expression
         Invoke-ScoopBuckets
     }
 
     Write-Host "To install the rest of packages, you must run this script as admin." -ForegroundColor Red
     Write-Host "Exiting..."
-    exit
+    exit 1
+}
+
+Write-None
+# Check winget is available, if not prompt user to open Microsoft Store and Update "App Installer"
+if (Get-Command "winget" -ErrorAction SilentlyContinue) {
+    Write-Host "winget is installed" -ForegroundColor Green
+} else {
+    Write-Host "winget is not installed" -ForegroundColor Red
+    Write-Host "Opening Microsoft Store..." -ForegroundColor Blue
+    Start-Process -FilePath "ms-windows-store://pdp/?productid=9NBLGGH4NNS1&referrer=powershell" -Verb "open" -ArgumentList "-force"
+    Write-Host "Please update App Installer to install winget." -ForegroundColor Red
+    exit 1
 }
 
 if (Get-Command "choco" -ErrorAction SilentlyContinue) {
-    Write-Host Chocolatey is installed
+    Write-Host "Chocolatey is installed" -ForegroundColor Green
 } else {
-    Write-Host "Installing Chocolatey..."
+    Write-None
+    Write-Host "Installing Chocolatey..." -ForegroundColor Blue
     [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
     Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 }
 
-# Get a list of essential WinGet packages to install
+# Get a list of essential winget packages to install
+# Try to avoid Microsoft Store as a package source
 $wgEssentials = @(
     # Browsers
     "Mozilla.Firefox",
@@ -61,10 +91,15 @@ $wgEssentials = @(
     "Notepad++.Notepad++",
     "Git.Git",
     "GitHub.Cli",
-
+    "Axosoft.GitKraken",
     "Microsoft.PowerShell",
     "Microsoft.VisualStudioCode",
     "OpenJS.NodeJS.LTS",
+    "SublimeHQ.SublimeText",
+    "Cygwin.Cygwin",
+    "Terminals.Terminals",
+    "Starship.Starship",
+    "chrisant996.Clink"
 
     # Archiver
     "RARLab.WinRAR",
@@ -80,43 +115,88 @@ $wgEssentials = @(
     "SMPlayer.SMPlayer",
     "Spotify.Spotify",
     "erengy.Taiga",
+    "Pinta.Pinta",
+    "XnSoft.XnConvert",
 
     # Office Suites
-    "TheDocumentFoundation.LibreOffice"
-)
+    "TheDocumentFoundation.LibreOffice",
+    "KDE.Kate",
+    "calibre.calibre",
+    "JohnMacFarlane.Pandoc",
 
-$chEssentials = @(
-    "gitkraken"
+    # Productivity
+    "KDE.KDEConnect",
+    "File-New-Project.EarTrumpet",
+
+    # Other
+    "Rufus.Rufus",
+    "JanDeDobbeleer.OhMyPosh",
+    "Cloudflare.Warp"
 )
 
 $scEssentials = @(
+    # Others
+    "neofetch"
 )
 
-# Try to install WinGet packages from $wgEssentials
-Write-Host "Installing WinGet packages..."
-ForEach ($package in $wgEssentials) {
-    Write-Host "Installing $package..."
-    WinGet install --id $package -e
+$chEssentials = @(
+    # Multimedia
+    "paint.net",
+
+    # Development Tools
+    "micro",
+    "nano",
+
+    # Customizer
+    "winaero-tweaker"
+)
+
+# Try to install winget packages from $wgEssentials
+Write-Host "Installing winget packages..." -ForegroundColor Blue
+foreach ($package in $wgEssentials) {
+    Write-None
+    Write-Host "Installing $package..." -ForegroundColor Blue
+    winget install --id $package -e
 }
 
 # Try to install Scoop packages from $scEssentials
-Write-Host "Installing Scoop packages..."
-ForEach ($package in $scEssentials) {
-    Write-Host "Installing $package..."
-    scoop install $package
+Write-None
+Write-Host "Installing Scoop packages..." -ForegroundColor Blue
+Write-Host "We will install the following packages:" -ForegroundColor Yellow
+Write-Host "$($scEssentials -join ', ')"
+Write-None
+scoop install $scEssentials --global
+
+Write-None
+# Try to install Chocolatey packages from $chEssentials
+Write-Host "Installing Chocolatey packages..." -ForegroundColor Blue
+Write-Host "We will install the following packages:" -ForegroundColor Yellow
+Write-Host "$($chEssentials -join ', ')"
+Write-None
+choco install $chEssentials
+
+# Install nerdfont
+Write-None
+Write-Host "Downloading fonts..." -ForegroundColor Blue
+$nerdFont = @(
+    "3270",
+    "Iosevka"
+)
+
+ForEach ($font in $nerdFont) {
+    Write-None
+    Write-Host "Downloading $font..." -ForegroundColor Blue
+    Invoke-WebRequest -Uri "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/$($font).zip" -OutFile "$($File).zip"
+    Expand-Archive -Path "$($File).zip" -DestinationPath ".\Fonts" -Force
 }
 
-# Try to install Chocolatey packages from $chEssentials
-Write-Host "Installing Chocolatey packages..."
-ForEach ($package in $chEssentials) {
-    Write-Host "Installing $package..."
-    choco install $package -y
-}
+Write-None
+Write-Host "Please manually install the fonts in the Fonts folder." -ForegroundColor DarkYellow
+explorer.exe .\Fonts
 
 $wgGames = @(
     "Valve.Steam",
     "EpicGames.EpicGamesLauncher",
-    "Discord.Discord",
     "Peppy.Osu!",
     "Microsoft.VC++2015-2022Redist-x86",
     "Microsoft.VC++2015-2022Redist-x64",
@@ -133,9 +213,59 @@ $wgGames = @(
 
 $wgGames_Ask = Read-Host -Prompt "Do you want to install Games pack? (y/n)"
 if ($wgGames_Ask -eq "y") {
-    Write-Host "Installing WinGet Games packages..."
-    ForEach ($package in $wgGames) {
-        Write-Host "Installing $package..."
-        WinGet install --id $package -e
+    Write-Host "Installing winget Games packages..."
+    foreach ($package in $wgGames) {
+        if ($package -eq "Peppy.Osu!") {
+            $osuPrompt = Read-Host -Prompt "Install osu!? (y/n)"
+            if ($osuPrompt -eq "y") {
+                Write-Host "Installing osu!" -ForegroundColor Blue
+                winget install --id $package -e
+            }
+        } else {
+            Write-Host "Installing $package..."
+            winget install --id $package -e
+        }
     }
+}
+
+Write-None
+Write-Host "Windows Configurations"
+Write-Host "======================"
+
+Write-None
+$setSystemAsUtc = Read-Host -Prompt "Read BIOS time as UTC, useful if dual-boot with Linux? (y/n)"
+if ($setSystemAsUtc -eq "y") {
+    $archiveLink = "https://www.howtogeek.com/wp-content/uploads/2017/08/Make-Windows-Use-UTC-Time.zip"
+    Write-Host "Configuring Windows to read BIOS time as UTC..." -ForegroundColor Blue
+
+    # Download file
+    Invoke-WebRequest -Uri $archiveLink -OutFile "Make-Windows-Use-UTC-Time.zip"
+
+    # Unarchive file
+    Write-Host "Unarchiving file..." -ForegroundColor Blue
+    Expand-Archive -Path "Make-Windows-Use-UTC-Time.zip" -DestinationPath "." -Force
+
+    # Run .reg file
+    Write-Host "Running .reg file..." -ForegroundColor Blue
+    Start-Process -FilePath "Make Windows Use UTC Time.reg" -Verb "open" -ArgumentList "-force"
+
+    # Delete files
+    Write-Host "Deleting files..." -ForegroundColor Blue
+    Remove-Item -Path "Make-Windows-Use-UTC-Time.zip" -Force
+    Remove-Item -Path "Make Windows Use UTC Time.reg" -Force
+    Remove-Item -Path "Make Windows Use Local Time.reg" -Force
+} else {
+    Write-Host "Skipping..."
+}
+
+Write-None
+$setStarshipAsTUI = Read-Host -Prompt "Set Starship as shell interface? (y/n)"
+if ($setStarshipAsTUI -eq "y") {
+    # Configuring $PROFILE for Windows PowerShell
+    "Invoke-Expression (&starship init powershell)" >> $PROFILE
+
+    # Configuring LUA Clink script for Batch
+    "load(io.popen('starship init cmd'):read(`"*a`"))()" >> $env:LOCALAPPDATA\clink\starship.lua
+} else {
+    Write-Host "Skipping..."
 }
