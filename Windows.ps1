@@ -85,6 +85,7 @@ $wgEssentials = @(
     # Browsers
     "Mozilla.Firefox",
     "Google.Chrome",
+    "GnuWin32.Wget"
 
     # Development Tools
     "Microsoft.WindowsTerminal",
@@ -140,6 +141,9 @@ $scEssentials = @(
 )
 
 $chEssentials = @(
+    # Browsers
+    "curl"
+
     # Multimedia
     "paint.net",
 
@@ -173,7 +177,7 @@ Write-Host "Installing Chocolatey packages..." -ForegroundColor Blue
 Write-Host "We will install the following packages:" -ForegroundColor Yellow
 Write-Host "$($chEssentials -join ', ')"
 Write-None
-choco install $chEssentials
+choco install $chEssentials -y
 
 # Install nerdfont
 Write-None
@@ -265,7 +269,8 @@ if ($setStarshipAsTUI -eq "y") {
     "Invoke-Expression (&starship init powershell)" >> $PROFILE
 
     # Configuring LUA Clink script for Batch
-    "load(io.popen('starship init cmd'):read(`"*a`"))()" >> $env:LOCALAPPDATA\clink\starship.lua
+    $starshipLua = Get-Content -Path ".\scripts\starship.lua"
+    $starshipLua >> $env:LOCALAPPDATA\clink\starship.lua
 } else {
     Write-Host "Skipping..."
 }
