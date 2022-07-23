@@ -3,7 +3,8 @@
         "ms-vscode.powershell",
         "rechinformatica.rech-editor-batch",
         "rpinski.shebang-snippets",
-        "EditorConfig.EditorConfig"
+        "EditorConfig.EditorConfig",
+        "sumneko.lua"
     ],
     "unwantedRecommendations": [
         "vscode.bat"
