@@ -1,5 +1,11 @@
 # Archives
 **.zip
+**.tar.gz
+**.tar.bz2
+**.tar.xz
+**.tar.lz
+**.rar
+**.7z
 
 # Fonts
 **.otf
@@ -12,3 +18,6 @@
 **.cnf
 **.config
 **.toml
+
+# Used for config files in several programs/packages that just installed
+!config/**
