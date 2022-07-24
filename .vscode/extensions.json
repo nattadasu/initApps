@@ -4,7 +4,10 @@
         "rechinformatica.rech-editor-batch",
         "rpinski.shebang-snippets",
         "EditorConfig.EditorConfig",
-        "sumneko.lua"
+        "sumneko.lua",
+        "tamasfe.even-better-toml",
+        "bmalehorn.shell-syntax",
+        "bmalehorn.vscode-fish"
     ],
     "unwantedRecommendations": [
         "vscode.bat"
