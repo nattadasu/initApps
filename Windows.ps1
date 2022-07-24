@@ -85,7 +85,9 @@ $wgEssentials = @(
     # Browsers
     "Mozilla.Firefox",
     "Google.Chrome",
-    "GnuWin32.Wget"
+    "GnuWin32.Wget",
+    "BraveSoftware.BraveBrowser",
+    "eloston.ungoogled-chromium",
 
     # Development Tools
     "Microsoft.WindowsTerminal",
@@ -118,6 +120,7 @@ $wgEssentials = @(
     "erengy.Taiga",
     "Pinta.Pinta",
     "XnSoft.XnConvert",
+    "KDE.Krita",
 
     # Office Suites
     "TheDocumentFoundation.LibreOffice",
@@ -131,7 +134,7 @@ $wgEssentials = @(
 
     # Other
     "Rufus.Rufus",
-    "JanDeDobbeleer.OhMyPosh",
+    "Balena.Etcher",
     "Cloudflare.Warp"
 )
 
@@ -146,6 +149,7 @@ $chEssentials = @(
 
     # Multimedia
     "paint.net",
+    "musicbee",
 
     # Development Tools
     "micro",
@@ -258,6 +262,29 @@ if ($setSystemAsUtc -eq "y") {
     Remove-Item -Path "Make-Windows-Use-UTC-Time.zip" -Force
     Remove-Item -Path "Make Windows Use UTC Time.reg" -Force
     Remove-Item -Path "Make Windows Use Local Time.reg" -Force
+} else {
+    Write-Host "Skipping..."
+}
+
+Write-None
+Write-Host "We will configure PowerShell for you." -ForegroundColor Blue
+Write-Host "This includes: " -ForegroundColor Yellow -NoNewline
+Write-Host "PSReadLine, PSScriptAnalyzer, PowerShell-Beautifier"
+$setPowerShell = Read-Host -Prompt "Configure PowerShell? (y/n)"
+if ($setPowerShell -eq "y") {
+    Write-Host "Configuring PowerShell..." -ForegroundColor Blue
+    # Configuring in Windows PowerShell
+    Install-Module -Name PSReadLine -AcceptLicense -Confirm -AllowPrerelease -SkipPublisherCheck
+    Install-Module -Name PowerShell-Beautifier -AcceptLicense -Confirm
+    Install-Module -Name PSScriptAnalyzer -AcceptLicense -Confirm
+    $changeProfile = '$psProfile = Get-Content -Path ".\config\Microsoft.PowerShell_profile.ps1"; $psProfile >> $PROFILE'
+    powershell -Command "$changeProfile"
+
+    # Configuring in PowerShell Core
+    pwsh -Command 'Install-Module -Name PSReadLine -AcceptLicense -Confirm -AllowPrerelease -SkipPublisherCheck'
+    pwsh -Command 'Install-Module -Name PowerShell-Beautifier -AcceptLicense -Confirm'
+    pwsh -Command 'Install-Module -Name PSScriptAnalyzer -AcceptLicense -Confirm'
+    pwsh -Command "$changeProfile"
 } else {
     Write-Host "Skipping..."
 }
