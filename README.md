@@ -11,7 +11,9 @@ Also, some softwares will be named after their WinGet's package id, if available
 
 ## What apps will be installed?
 
-This script will install the following apps: <!-- cSpell:Disable --->
+This script will install the following apps:
+
+<!-- cSpell:Disable --->
 
 |                            Packages |      Category      |        Windows Source        | Ubuntu Source            |
 | ----------------------------------: | :----------------: | :--------------------------: | :----------------------- |
