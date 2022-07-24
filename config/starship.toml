@@ -1,0 +1,61 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+"add_newline" = false
+
+"format" = """╭─$username$hostname$directory$git_branch($git_status[> ](bold yellow))
+╰─$shell$character"""
+
+continuation_prompt = "[>>>](gray) "
+
+# The following styling is inspired by [Bira theme](https://github.com/oh-my-fish/theme-bira)
+# for Fish shell.
+
+[username]
+disabled = false
+style_root = "red bold"
+style_user = "green bold"
+show_always = true
+format = "[$user]($style)"
+
+[hostname]
+disabled = false
+ssh_only = false
+ssh_symbol = "☁ "
+format = "[@$hostname](bold green) $ssh_symbol"
+
+[directory]
+truncation_length = 0
+
+[git_branch]
+disabled = false
+format = "[<$branch(:$remote_branch)]($style)"
+style = "bold yellow"
+
+[git_status]
+untracked = "U"
+modified = "M"
+deleted = "D"
+renamed = "R"
+stashed = "S"
+format = "([*$all_status]($style))"
+style = "bold yellow"
+
+[shell]
+disabled = false
+bash_indicator = "bash"
+zsh_indicator = "zsh"
+fish_indicator = "><>"
+cmd_indicator = "CMD"
+powershell_indicator = "pwsh"
+unknown_indicator = "???"
+format = "[\\[$indicator\\]]($style)"
+style = "blue bold"
+
+[character]
+success_symbol = "[\\$](bold white)"
+error_symbol = "[\\$](bold red)"
+format = "$symbol "
+
+[battery]
+disabled = true
