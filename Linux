@@ -34,19 +34,11 @@ if [[ ! -x $(which nala) ]]; then
   pacstall -I nala-deb
 fi
 
-# check if flatpak is available, if not install
-if [[ ! -x $(which flatpak) ]]; then
-  echo "Installing flatpak..."
-  sudo apt install flatpak gnome-software-plugin-flatpak
-fi
-
-# upgrade snap packages if available, if not install snap
-if [[ -x $(which snap) ]]; then
-  echo "Upgrading snap packages..."
-  sudo snap refresh
-else
-  echo "Installing snap..."
-  sudo apt install snapd snap-store
+# check if deb-get is available, if not install
+if [[ ! -x $(which deb-get) ]]; then
+  echo "Installing deb-get..."
+  sudo apt install curl
+  curl -sL https://raw.githubusercontent.com/wimpysworld/deb-get/main/deb-get | sudo -E bash -s install deb-get
 fi
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -64,6 +56,38 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 # Install packages from following array with nala
 echo "Installing packages with nala..."
 declare -a nala_packages
-nala_packages=()
+nala_packages=(
+  wget
+)
 
 nala install ${nala_packages[*]}
+
+# Unsnap packages, script by popey: https://github.com/popey/unsnap
+echo "Unsnapping packages..."
+git clone https://github.com/popey/unsnap
+cd unsnap
+./unsnap auto
+
+cd ../ && rm -rf unsnap
+
+# Download and install package binaries using wget
+echo "Downloading binaries..."
+declare -a binary_list
+binary_list=(
+  https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+)
+for binary in binary_list; do
+  curl -O "${binary}"
+done
+
+# Download and install flatpak packages
+echo "Downloading flatpak packages..."
+declare -a flatpak_list
+flatpak_list=(
+  io.github.peazip.PeaZip
+  io.github.realmazharhusain.GdmSettings
+)
+
+for pkgs in flatpak_list; do
+  flatpak install flathub "${pkgs}"
+done
