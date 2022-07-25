@@ -7,6 +7,13 @@
 **.rar
 **.7z
 
+# Binaries
+**.exe
+**.msi
+**.dmg
+**.pkg
+**.deb
+
 # Fonts
 **.otf
 **.ttf
