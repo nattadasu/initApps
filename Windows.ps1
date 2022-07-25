@@ -140,7 +140,7 @@ $wgEssentials = @(
 
 $scEssentials = @(
     # Others
-    "neofetch"
+    "winfetch"
 )
 
 $chEssentials = @(
@@ -269,7 +269,7 @@ if ($setSystemAsUtc -eq "y") {
 Write-None
 Write-Host "We will configure PowerShell for you." -ForegroundColor Blue
 Write-Host "This includes: " -ForegroundColor Yellow -NoNewline
-Write-Host "PSReadLine, PSScriptAnalyzer, PowerShell-Beautifier"
+Write-Host "PSReadLine, PSScriptAnalyzer, PowerShell-Beautifier, Get-ChildItemColor"
 $setPowerShell = Read-Host -Prompt "Configure PowerShell? (y/n)"
 if ($setPowerShell -eq "y") {
     Write-Host "Configuring PowerShell..." -ForegroundColor Blue
@@ -277,6 +277,7 @@ if ($setPowerShell -eq "y") {
     Install-Module -Name PSReadLine -AcceptLicense -Confirm -AllowPrerelease -SkipPublisherCheck
     Install-Module -Name PowerShell-Beautifier -AcceptLicense -Confirm
     Install-Module -Name PSScriptAnalyzer -AcceptLicense -Confirm
+    Install-Module -Name Get-ChildItemColor -AcceptLicense -Confirm
     $changeProfile = '$psProfile = Get-Content -Path ".\config\Microsoft.PowerShell_profile.ps1"; $psProfile >> $PROFILE'
     powershell -Command "$changeProfile"
 
@@ -284,6 +285,7 @@ if ($setPowerShell -eq "y") {
     pwsh -Command 'Install-Module -Name PSReadLine -AcceptLicense -Confirm -AllowPrerelease -SkipPublisherCheck'
     pwsh -Command 'Install-Module -Name PowerShell-Beautifier -AcceptLicense -Confirm'
     pwsh -Command 'Install-Module -Name PSScriptAnalyzer -AcceptLicense -Confirm'
+    pwsh -Command 'Install-Module -Name Get-ChildItemColor -AcceptLicense -Confirm'
     pwsh -Command "$changeProfile"
 } else {
     Write-Host "Skipping..."
