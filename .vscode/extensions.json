@@ -7,7 +7,8 @@
         "sumneko.lua",
         "tamasfe.even-better-toml",
         "bmalehorn.shell-syntax",
-        "bmalehorn.vscode-fish"
+        "bmalehorn.vscode-fish",
+        "timonwong.shellcheck"
     ],
     "unwantedRecommendations": [
         "vscode.bat"
