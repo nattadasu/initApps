@@ -100,7 +100,6 @@ $wgEssentials = @(
     "OpenJS.NodeJS.LTS",
     "SublimeHQ.SublimeText",
     "Cygwin.Cygwin",
-    "Terminals.Terminals",
     "Starship.Starship",
     "chrisant996.Clink"
 
@@ -127,6 +126,7 @@ $wgEssentials = @(
     "KDE.Kate",
     "calibre.calibre",
     "JohnMacFarlane.Pandoc",
+    "ONLYOFFICE.DesktopEditors",
 
     # Productivity
     "KDE.KDEConnect",
