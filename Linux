@@ -60,25 +60,34 @@ nala_packages=(
   wget
 )
 
-nala install ${nala_packages[*]}
+nala install "${nala_packages[@]}"
 
 # Unsnap packages, script by popey: https://github.com/popey/unsnap
 echo "Unsnapping packages..."
 git clone https://github.com/popey/unsnap
-cd unsnap
+cd unsnap || return
 ./unsnap auto
-
 cd ../ && rm -rf unsnap
 
 # Download and install package binaries using wget
 echo "Downloading binaries..."
+mkdir binary
+cd binary || return
 declare -a binary_list
 binary_list=(
   https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 )
-for binary in binary_list; do
+for binary in "${binary_list[@]}"; do
   curl -O "${binary}"
 done
+
+# Install all *.deb files
+echo "Installing binaries..."
+sudo dpkg -i ./*.deb
+sudo dpkg --configure -a
+sudo apt-get install -f
+
+cd .. || return
 
 # Download and install flatpak packages
 echo "Downloading flatpak packages..."
@@ -88,6 +97,6 @@ flatpak_list=(
   io.github.realmazharhusain.GdmSettings
 )
 
-for pkgs in flatpak_list; do
+for pkgs in "${flatpak_list[@]}"; do
   flatpak install flathub "${pkgs}"
 done
