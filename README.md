@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD026 MD033 -->
-<!-- cSpell:words choco eloston Flatpak neofetch pacstall popey ungoogled volitank wimpysworld winfetch winget -->
+<!-- cSpell:words Asus choco eloston Flatpak neofetch pacstall popey ungoogled volitank wimpysworld winfetch winget Zorin -->
 
 # initApps
 
@@ -109,6 +109,12 @@ But I do offer Brave Browser and Ungoogled Chromium for Chromium-based browsers 
 * WinGet: `winget uninstall --id <package>`
 
 or... you can tick a comment on unwanted apps in the script, its not that hard, folks.
+
+## Why on Linux Source Priority, you're using native package (deb) than `flatpak`?
+
+This repo project also considers to be used on low spec machines. I owned a 2015 Asus notebook running Ubuntu 22.04, Zorin OS 16.1, and Fedora Workstation 35, and some `flatpak` apps I tried to open loads very slow compared to native package (deb) apps.
+
+However, if the apps only released on `flatpak`, I'll install the apps although previously mentioned issue. ~~I'm looking at you, GNOME Circle apps~~ 👀
 
 ## What is...
 
