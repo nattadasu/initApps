@@ -41,6 +41,7 @@ This script will install the following apps:
 | Cygwin                 | Cygwin                  |      LGPL       |       Shell        |          `winget`           |                  -                  |
 | deb-get                | wimpysworld             |       MIT       |  Package Manager   |              -              |               Binary                |
 | EarTrumpet             | File-New-Project        |       MIT       |     Customizer     |          `winget`           |                  -                  |
+| Epic Games Store       | Epic Games              |   Proprietary   |       Games        |          `winget`           |                  -                  |
 | Firefox                | Mozilla                 |     MPL 2.0     |      Browser       |          `winget`           |      `apt`[<sup>2</sup>](#fn2)      |
 | Flatpak                | Flatpak                 |    LGPL 2.1     |  Package Manager   |              -              |           Native or `apt`           |
 | git                    | Git                     |     GPL 2.0     |  Version Control   |          `winget`           |               Native                |
@@ -62,6 +63,7 @@ This script will install the following apps:
 | Node.js LTS            | OpenJS                  |       MIT       |      Runtime       |          `winget`           |                `apt`                |
 | Notepad++              | Don Ho                  |     GPL 3.0     |    Text Editor     |          `winget`           |                  -                  |
 | OnlyOffice             | Ascensio System SIA     |    AGPL 3.0     |    Office Suite    |          `winget`           |              `deb-get`              |
+| osu!                   | ppy                     |   Proprietary   |       Games        |          `winget`           |                  -                  |
 | pacstall               | pacstall                |     GPL 3.0     |  Package Manager   |              -              |               Binary                |
 | Paint.NET              | dotPDN                  |   Proprietary   |       Paint        |          `winget`           |                  -                  |
 | Pandoc                 | JohnMacFarlane          |     GPL 2.0     | Document Converter |          `winget`           |                `apt`                |
@@ -74,9 +76,11 @@ This script will install the following apps:
 | SMPlayer               | SMPlayer                |     GPL 2.0     |    Video Player    |          `winget`           |              `flatpak`              |
 | Spotify                | Spotify                 |   Proprietary   |    Music Player    |          `winget`           |              `deb-get`              |
 | Starship               | Starship                |       ISC       |    Shell Prompt    |          `winget`           |               Binary                |
+| Steam                  | Valve                   |   Proprietary   |       Games        |          `winget`           |         `apt` or `deb-get`          |
 | Taiga                  | erengy                  |     GPL 3.0     |   Media Tracker    |          `winget`           |                  -                  |
 | Thunderbird            | Mozilla                 |     MPL 2.0     |   E-mail Client    |          `winget`           |                `apt`                |
 | Ungoogled Chromium     | ungoogled-software      |  BSD 3-clause   |      Browser       |          `winget`           |           `apt` with PPA            |
+| Visual Code++ Redist   | Microsoft               |   Proprietary   |      Library       |          `winget`           |                  -                  |
 | Visual Studio Code     | Microsoft               |       MIT       |    Text Editor     |          `winget`           |              `deb-get`              |
 | VLC Media Player       | VideoLAN                |     GPL 2.0     |    Video Player    |          `winget`           |           Native or `apt`           |
 | Warp                   | Cloudflare              |   Proprietary   |       Tunnel       |          `winget`           |                `apt`                |

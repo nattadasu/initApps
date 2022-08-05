@@ -195,12 +195,12 @@ ForEach ($font in $nerdFont) {
     Write-None
     Write-Host "Downloading $font..." -ForegroundColor Blue
     Invoke-WebRequest -Uri "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/$($font).zip" -OutFile "$($File).zip"
-    Expand-Archive -Path "$($File).zip" -DestinationPath ".\Fonts" -Force
+    Expand-Archive -Path "$($File).zip" -DestinationPath "./Fonts" -Force
 }
 
 Write-None
 Write-Host "Please manually install the fonts in the Fonts folder." -ForegroundColor DarkYellow
-explorer.exe .\Fonts
+explorer.exe ./Fonts
 
 $wgGames = @(
     "Valve.Steam",
@@ -278,7 +278,7 @@ if ($setPowerShell -eq "y") {
     Install-Module -Name PowerShell-Beautifier -AcceptLicense -Confirm
     Install-Module -Name PSScriptAnalyzer -AcceptLicense -Confirm
     Install-Module -Name Get-ChildItemColor -AcceptLicense -Confirm
-    $changeProfile = '$psProfile = Get-Content -Path ".\config\Microsoft.PowerShell_profile.ps1"; $psProfile >> $PROFILE'
+    $changeProfile = '$psProfile = Get-Content -Path "./config/Microsoft.PowerShell_profile.ps1"; $psProfile >> $PROFILE'
     powershell -Command "$changeProfile"
 
     # Configuring in PowerShell Core
@@ -298,8 +298,22 @@ if ($setStarshipAsTUI -eq "y") {
     "Invoke-Expression (&starship init powershell)" >> $PROFILE
 
     # Configuring LUA Clink script for Batch
-    $starshipLua = Get-Content -Path ".\scripts\starship.lua"
-    $starshipLua >> $env:LOCALAPPDATA\clink\starship.lua
+    $starshipLua = Get-Content -Path "./scripts/starship.lua"
+    $starshipLua >> $env:LOCALAPPDATA/clink/starship.lua
+
+    Write-None
+    $setStarshipConfig = Read-Host -Prompt "Set Starship config? (y/n)"
+    if ($setStarshipConfig -eq "y") {
+        Write-Host "Setting Starship up..." -ForegroundColor Blue
+        $starshipConfig = Get-Content -Path "./config/starship.toml"
+        # Test if ~/.config folder is exist, if not create
+        if (!(Test-Path -Path ~/.config)) {
+            New-Item -Path ~/.config -Type Directory -Force
+        }
+        $starshipConfig > ~/.config/starship.toml
+    } else {
+        Write-Host "Skipping..."
+    }
 } else {
     Write-Host "Skipping..."
 }
