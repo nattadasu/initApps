@@ -3,7 +3,7 @@
 
 "add_newline" = false
 
-"format" = """╭─$username$hostname$directory$git_branch($git_status[> ](bold yellow))
+"format" = """╭─$username$hostname$directory([<](bold yellow)$git_branch$git_status[> ](bold yellow))
 ╰─$shell$character"""
 
 continuation_prompt = "[>>>](gray) "
@@ -29,7 +29,7 @@ truncation_length = 0
 
 [git_branch]
 disabled = false
-format = "[<$branch(:$remote_branch)]($style)"
+format = "[$branch(:$remote_branch)]($style)"
 style = "bold yellow"
 
 [git_status]
