@@ -1,0 +1,14 @@
+universal:
+  powershell5:
+    - PowerShellGet # Force for PowerShell 5.1
+linux:
+  universal:
+    - python3
+  deb:
+    - python3-pip
+    - python3-urwid
+    - python3-cairo
+    - python3-gi
+    - python3-pyqt5
+    - python3-pil
+    - python-is-python3

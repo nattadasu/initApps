@@ -1,0 +1,23 @@
+- name: Apple Cursor
+  author: ful1e5
+  website: https://github.com/ful1e5/apple_cursor
+  license: GPL-3.0
+  scripts:
+    windows: |
+      $dark = 'https://github.com/ful1e5/apple_cursor/releases/download/v2.0.0/macOS-Monterey-Windows.zip'
+      $light = 'https://github.com/ful1e5/apple_cursor/releases/download/v2.0.0/macOS-Monterey-White-Windows.zip'
+      # Download the dark theme
+      Write-Host "Downloading cursors: Apple Cursor"
+      Invoke-WebRequest -Uri $dark -OutFile ~\.Personalizations\Windows\Cursor\macOS-Monterey-Windows.zip.temp
+      Invoke-WebRequest -Uri $light -OutFile ~\.Personalizations\Windows\Cursor\macOS-Monterey-White-Windows.zip.temp
+      # Extract the dark theme
+      Write-Host "Extracting dark variant"
+      Expand-Archive -Path ~\.Personalizations\Windows\Cursor\macOS-Monterey-Windows.zip.temp -DestinationPath ~\.Personalizations\Windows\Cursor\
+      Write-Host "Extracting light variant"
+      Expand-Archive -Path ~\.Personalizations\Windows\Cursor\macOS-Monterey-White-Windows.zip.temp -DestinationPath ~\.Personalizations\Windows\Cursor\
+      Write-Host "Deleting themes"
+      Remove-Item ~\.Personalizations\Windows\Cursor\macOS-Monterey-Windows.zip.temp
+      Remove-Item ~\.Personalizations\Windows\Cursor\macOS-Monterey-White-Windows.zip.temp
+      # Open explorer to the folder
+      Write-Host "Please right click on the Install.inf file and select 'Install'"
+      Start-Process ~\.Personalizations\Windows\Cursor\macOS-Monterey-Regular-Windows\

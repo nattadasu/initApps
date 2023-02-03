@@ -1,0 +1,65 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "propertyPattern": "^[a-zA-Z0-9_]+$",
+    "type": "object",
+    "additionalProperties": {
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "author": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "package": {
+                    "type": "string"
+                },
+                "repository": {
+                    "type": "string",
+                    "format": "uri"
+                },
+                "license": {
+                    "type": "string"
+                },
+                "available": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "Windows",
+                            "Linux",
+                            "Android",
+                            "macOS"
+                        ]
+                    },
+                    "uniqueItems": true
+                },
+                "executables": {
+                    "oneOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "uniqueItems": true
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "isolated": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "If true, the application will be installed in a sandboxed package manager. For example, pipx for Python and npx for Node.js."
+                }
+            },
+            "additionalProperties": false
+        }
+    }
+}

@@ -1,0 +1,17 @@
+- name: WinRAR 11
+  author: Infinity Brazil
+  website: https://www.deviantart.com/infinitybrazil/art/Windows-11-Winrar-Theme-886310151
+  license: CC-BY-NC-ND-3.0
+  script: |
+    $uri = https://thealiendrew.github.io/mediafire-direct/?dl=https://www.mediafire.com/file/y0tg9bjhmsjboqg/Windows_11_x64_.theme.rar/file
+    Write-Host "Launching WinRAR theme: $uri"
+    Write-Host "Please close the browser when the download is complete."
+    Start-Process $uri -Wait
+    # Look for the file in the Downloads folder
+    $file = Get-ChildItem -Path $env:USERPROFILE\Downloads -Filter *.rar -Recurse
+    # If there's 'Windows 11 x64 .theme.rar' in the Downloads folder, open it
+    $file | ForEach-Object {
+      if ($_.Name -eq "Windows 11 x64 .theme.rar") {
+        Start-Process $_.FullName -Wait
+      }
+    }

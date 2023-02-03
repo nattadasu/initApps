@@ -1,0 +1,29 @@
+extensions:
+  buildIn:
+    - name: Full App Display
+      description: Minimal album cover art display with beautiful blur effect background.
+      path: fullAppDisplay.js
+    - name: Auto Skip Video
+      description: Auto skip video.
+      path: autoSkipVideo.js
+  community:
+    - name: Full App Display modified
+      maintainer: huhridge
+      description: Minimal album cover art display with beautiful blur effect background.
+      path: fullAppDisplayMod.js
+      repository: https://github.com/huhridge/huh-spicetify-extensions/tree/main/fullAppDisplayModified
+    - name: spicetify-hide-podcasts
+      maintainer: theRealPadster
+      description: Spicetify extension to hide podcasts.
+      path: hidePodcasts.js
+      repository: https://github.com/theRealPadster/spicetify-hide-podcasts
+themes:
+  community:
+customApps:
+  buildIn:
+    - name: Lyrics Plus
+      description: Show current track lyrics.
+      path: lyrics-plus
+    - name: New Releases
+      description: Show new releases from your followed artists.
+      path: new-releases

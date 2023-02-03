@@ -1,0 +1,855 @@
+- id: org.7-zip.7-Zip
+  name: 7-Zip
+  publisher: Igor Pavlov
+  author: Igor Pavlov
+  homepage: https://www.7-zip.org
+  license: LGPL
+  packages:
+    windows:
+      choco: 7zip
+      winget: 7zip.7zip
+- id: ru.aimp.AIMP
+  name: AIMP
+  publisher: AIMP DevTeam
+  author: Artem Izmaylov
+  homepage: https://www.aimp.ru
+  license: Proprietary
+  packages:
+    windows:
+      choco: aimp
+      scoop: aimp
+      winget: AIMP.AIMP
+    android:
+      play: com.aimp.player
+- id: com.aomeitech.PartitionAssistant
+  name: AOMEI Partition Assistant
+  publisher: AOMEI International Network Limited.
+  author: AOMEI International Network Limited.
+  homepage: https://www.aomeitech.com/aomei-partition-assistant.html
+  license: Proprietary
+  packages:
+    windows:
+      choco: partition-assistant-standard
+      winget: AOMEI.PartitionAssistant
+- id: org.audacityteam.Audacity
+  name: Audacity
+  publisher: Audacity Team
+  author: Audacity Team
+  homepage: https://www.audacityteam.org/
+  license: GPL-2.0-or-later
+  packages:
+    windows:
+      choco: audacity
+      scoop: audacity
+      winget: Audacity.Audacity
+    linux:
+      apk: audacity
+      apt: audacity
+      aur: audacity-git
+      dnf: audacity
+      flatpak: org.audacityteam.Audacity
+      nixpkgs: audacity
+      snap: audacity
+- id: com.autohotkey.AutoHotkey
+  name: AutoHotkey
+  publisher: Lexikos
+  author: Steve Gray
+  homepage: https://autohotkey.com
+  license: GPL-2.0
+  packages:
+    windows:
+      choco: autohotkey
+      scoop: autohotkey
+      winget: Lexikos.AutoHotkey
+- id: eu.betterbird.Betterbird
+  name: Betterbird
+  publisher: Betterbird-Team
+  author: Betterbird-Team
+  homepage: https://betterbird.eu
+  license: MPL-2.0
+  packages:
+    windows:
+      choco: betterbird
+      winget: Betterbird.Betterbird
+    linux:
+      aur: betterbird-bin
+      flatpak: eu.betterbird.Betterbird
+- id: com.bitwarden.Bitwarden
+  name: Bitwarden
+  publisher: Bitwarden Inc.
+  author: Bitwarden Inc.
+  homepage: https://bitwarden.com/download/
+  license: GPL-3.0 or Bitwarden-1.0
+  packages:
+    windows:
+      choco: bitwarden
+      scoop: bitwarden
+      winget: Bitwarden.Bitwarden
+    linux:
+      aur: bitwarden-git
+      debGet: bitwarden
+      flatpak: com.bitwarden.desktop
+      nixpkgs: bitwarden
+      pacstall: bitwarden-deb
+      snap: bitwarden
+    android:
+      play: com.x8bit.bitwarden
+- id: com.brave.Browser
+  name: Brave
+  publisher: Brave Software Inc
+  author: Brave Software, Inc.
+  homepage: https://brave.com/download/
+  license: MPL-2.0
+  packages:
+    windows:
+      choco: brave
+      scoop: brave
+      winget: Brave.Brave
+    linux:
+      debGet: brave
+      flatpak: com.brave.Browser
+    android:
+      play: com.brave.browser
+- id: io.github.chrisant996.Clink
+  name: Clink
+  publisher: Christopher Antos
+  author: Chris Antos
+  homepage: https://chrisant996.github.io/clink/
+  license: GPL-3.0
+  packages:
+    windows:
+      choco: clink
+      scoop: clink
+      winget: chrisant996.Clink
+- id: com.cloudflare.warp
+  name: Cloudflare WARP
+  publisher: Cloudflare, Inc.
+  author: Cloudflare, Inc.
+  homepage: https://one.one.one.one/
+  license: Proprietary
+  packages:
+    windows:
+      choco: warp
+      winget: Cloudflare.Warp
+    android:
+      play: com.cloudflare.onedotonedotonedotone
+- id: com.discordapp.Discord
+  name: Discord
+  publisher: Discord Inc.
+  author: Discord Inc.
+  homepage: https://discord.com
+  license: Proprietary
+  packages:
+    windows:
+      choco: discord
+      scoop: discord
+      winget: Discord.Discord
+    linux:
+      debGet: discord
+      flatpak: com.discordapp.Discord
+    android:
+      play: com.discord
+- id: app.eartrumpet.EarTrumpet
+  name: EarTrumpet
+  publisher: File-New-Project
+  author: File-New-Project
+  homepage: https://eartrumpet.app
+  license: MIT
+  packages:
+    windows:
+      choco: eartrumpet
+      scoop: eartrumpet
+      winget: File-New-Project.EarTrumpet
+- id: com.git-scm.git
+  name: Git
+  publisher: The Git Development Community
+  author: Johannes Schindelin
+  homepage: https://git-scm.com
+  license: GPL-2.0
+  packages:
+    windows:
+      choco: git
+      scoop: git
+      winget: Git.Git
+    linux:
+      apk: git
+      apt: git
+      aur: git
+      dnf: git
+      nixpkgs: git
+    android:
+      pkg: git
+- id: com.github.gh
+  name: GitHub CLI
+  publisher: GitHub, Inc.
+  author: GitHub, Inc.
+  homepage: https://github.com/cli/cli
+  license: MIT
+  packages:
+    windows:
+      choco: gh
+      scoop: gh
+      winget: GitHub.cli
+    linux:
+      apk: gh
+      debGet: gh
+      dnf: gh
+      aur: github-cli
+      nixpkgs: gh
+    android:
+      pkg: gh
+- id: com.axosoft.GitKraken
+  name: GitKraken
+  publisher: GitKraken
+  author: Axosoft, LLC
+  homepage: https://www.gitkraken.com/git-client
+  license: Proprietary
+  packages:
+    windows:
+      choco: gitkraken
+      scoop: gitkraken
+      winget: Axosoft.GitKraken
+    linux:
+      debGet: gitkraken
+      flatpak: com.axosoft.GitKraken
+      snap: gitkraken
+- id: com.google.Chrome
+  name: Google Chrome
+  publisher: Google LLC
+  author: Google LLC
+  homepage: https://www.google.com/intl/en_us/chrome/
+  license: Proprietary
+  packages:
+    windows:
+      choco: GoogleChrome
+      winget: Google.Chrome
+    linux:
+      debGet: google-chrome-stable
+      flatpak: com.google.Chrome
+    android:
+      play: com.android.chrome
+- id: com.google.Drive
+  name: Google Drive
+  publisher: Google LLC
+  author: Google LLC
+  homepage: https://www.google.com/drive/download/
+  license: Proprietary
+  packages:
+    windows:
+      choco: googledrive
+      winget: Google.Drive
+    android:
+      play: com.google.android.apps.docs
+- id: jp.co.google.IME
+  name: Google Japanese Input
+  publisher: Google Inc.
+  author: Google Inc.
+  homepage: https://www.google.co.jp/ime/
+  license: Proprietary
+  packages:
+    windows:
+      choco: GoogleJapaneseInput
+      winget: Google.JapaneseIME
+- id: com.oracle.JRE
+  name: Java SE Development Kit 17
+  publisher: Oracle Corporation
+  author: Oracle Corporation
+  homepage: https://www.oracle.com/java/
+  license: Proprietary
+  packages:
+    windows:
+      winget: Oracle.JDK.17
+- id: org.kde.Connect
+  name: KDE Connect
+  publisher: KDE e.V.
+  author: KDE e.V.
+  homepage: https://kdeconnect.kde.org/
+  license: GPL-2.0 or GPL-3.0
+  packages:
+    windows:
+      choco: kdeconnect-kde
+      winget: KDE.KDEConnect
+    android:
+      play: org.kde.kdeconnect_tp
+- id: org.krita.Krita
+  name: Krita
+  publisher: Krita Foundation
+  author: Krita Foundation
+  homepage: https://krita.org/
+  license: GPL-3.0
+  packages:
+    windows:
+      choco: krita
+      scoop: krita
+      winget: KDE.Krita
+    linux:
+      flatpak: org.kde.krita
+    android:
+      play: org.krita
+- id: org.libreoffice.LibreOffice
+  name: LibreOffice
+  publisher: The Document Foundation
+  author: The Document Foundation
+  homepage: https://www.libreoffice.org/
+  license: MPL-2.0
+  packages:
+    windows:
+      choco: libreoffice
+      scoop: libreoffice
+      winget: TheDocumentFoundation.LibreOffice
+    linux:
+      apt: libreoffice
+      aur: libreoffice-still
+      dnf: libreoffice
+- id: com.microsoft.Edge
+  name: Microsoft Edge
+  publisher: Microsoft Corporation
+  author: Microsoft Corporation
+  homepage: https://www.microsoft.com/en-us/edge
+  license: MIT
+  packages:
+    windows:
+      choco: microsoft-edge
+      winget: Microsoft.Edge
+    android:
+      play: com.microsoft.emmx
+- id: com.microsoft.OneDrive
+  name: Microsoft OneDrive
+  publisher: Microsoft Corporation
+  author: Microsoft Corporation
+  homepage: https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage
+  license: Proprietary
+  packages:
+    windows:
+      choco: onedrive
+      winget: Microsoft.OneDrive
+    android:
+      play: com.microsoft.skydrive
+- id: com.visualstudio.code
+  name: Microsoft Visual Studio Code
+  publisher: Microsoft Corporation
+  author: Microsoft Corporation
+  homepage: https://code.visualstudio.com
+  license: Microsoft Software License
+  packages:
+    windows:
+      choco: vscode
+      winget: Microsoft.VisualStudioCode
+    linux:
+      debGet: code
+- id: org.mozilla.firefox
+  name: Mozilla Firefox
+  publisher: Mozilla
+  author: Mozilla Foundation
+  homepage: https://www.mozilla.org/en-US/firefox/
+  license: MPL-2.0
+  packages:
+    windows:
+      choco: Firefox
+      winget: Mozilla.Firefox
+    linux:
+      flatpak: org.mozilla.firefox
+      snap: firefox
+    android:
+      play: org.mozilla.firefox
+- id: com.musicbee.MusicBee
+  name: MusicBee
+  publisher: Steven Mayall
+  author: Steven Mayall
+  homepage: https://getmusicbee.com/
+  license: Proprietary
+  packages:
+    windows:
+      choco: musicbee
+      scoop: musicbee
+- id: org.nodejs.LTS
+  name: Node.js LTS
+  publisher: Node.js Foundation
+  author: OpenJS Foundation
+  homepage: https://nodejs.org
+  license: MIT
+  packages:
+    windows:
+      choco: nodejs-lts
+      winget: OpenJS.NodeJS.LTS
+- id: org.notepad-plus-plus.Notepad++
+  name: Notepad++
+  publisher: Notepad++ Team
+  author: Don Ho
+  homepage: https://notepad-plus-plus.org
+  license: GPL-2.0
+  packages:
+    windows:
+      choco: notepadplusplus
+      scoop: notepadplusplus
+      winget: Notepad++.Notepad++
+- id: com.dotpdn.PaintDotNet
+  name: Paint.NET
+  publisher: dotPDN LLC
+  author: dotPDN LLC
+  homepage: https://www.getpaint.net/
+  license: Proprietary
+  packages:
+    windows:
+      choco: paint.net
+      scoop: paint.net
+- id: org.pandoc.Pandoc
+  name: Pandoc
+  publisher: John MacFarlane
+  author: John Mac Farlane
+  homepage: https://pandoc.org
+  license: GPLv2
+  packages:
+    windows:
+      choco: pandoc
+      scoop: pandoc
+      winget: JohnMacFarlane.Pandoc
+    linux:
+      debGet: pandoc
+- id: io.github.peazip.PeaZip
+  name: PeaZip
+  publisher: Giorgio Tani
+  author: Giorgio Tani
+  homepage: https://peazip.github.io
+  license: LGPL3
+  packages:
+    windows:
+      choco: peazip
+      scoop: peazip
+      winget: Giorgiotani.Peazip
+    linux:
+      flatpak: io.github.peazip.Peazip
+- id: com.github.PintaProject.Pinta
+  name: Pinta
+  publisher: Pinta Community
+  author: Pinta Community
+  homepage: https://pinta-project.com
+  license: MIT
+  packages:
+    windows:
+      choco: Pinta
+      scoop: pinta
+      winget: Pinta.Pinta
+    linux:
+      flatpak: com.github.PintaProject.Pinta
+- id: net.daum.PotPlayer
+  name: PotPlayer
+  publisher: Kakao Corp.
+  author: Kakao Corp.
+  homepage: https://potplayer.daum.net/
+  license: Proprietary
+  packages:
+    windows:
+      choco: potplayer
+      scoop: potplayer
+      winget: Daum.PotPlayer
+- id: com.microsoft.PowerShellCore
+  name: PowerShell
+  publisher: Microsoft Corporation
+  author: Microsoft Corporation
+  homepage: https://microsoft.com/PowerShell
+  license: MIT
+  packages:
+    windows:
+      choco: powershell-core
+      winget: Microsoft.PowerShell
+    linux:
+      apk: powershell
+      debGet: powershell
+- id: com.microsoft.PowerToys
+  name: PowerToys
+  publisher: Microsoft Corporation
+  author: Microsoft Corporation
+  homepage: https://github.com/microsoft/PowerToys
+  license: MIT
+  packages:
+    windows:
+      scoop: powertoys-np
+      winget: Microsoft.PowerToys
+- id: org.python.Python3
+  name: Python 3
+  publisher: Python Software Foundation
+  author: Python Software Foundation
+  homepage: https://www.python.org
+  license: PSF LICENSE AGREEMENT FOR PYTHON
+  packages:
+    windows:
+      choco: python3
+      winget: Python.Python.3.9
+    linux:
+      apt: python3
+- id: info.smplayer.SMPlayer
+  name: SMPlayer
+  publisher: Ricardo Villalba
+  author: Ricardo Villalba
+  homepage: https://www.smplayer.info
+  license: GPL-2.0-only
+  packages:
+    windows:
+      choco: smplayer
+      scoop: smplayer
+      winget: SMPlayer.SMPlayer
+    linux:
+      flatpak: info.smplayer.SMPlayer
+- id: com.spotify.Client
+  name: Spotify
+  publisher: Spotify AB
+  author: Spotify AB
+  homepage: https://www.spotify.com/us/download/windows/
+  license: Proprietary
+  packages:
+    windows:
+      choco: spotify
+      scoop: spotify
+      winget: Spotify.Spotify
+    linux:
+      debGet: spotify-client
+      flatpak: com.spotify.Client
+    android:
+      play: com.spotify.music
+- id: com.startisback.StartAllBack
+  name: StartAllBack
+  publisher: startisback.com
+  author: Tihiy
+  homepage: https://www.startallback.com/
+  license: Proprietary
+  packages:
+    windows:
+      winget: StartIsBack.StartAllBack
+- id: com.sublimetext.four
+  name: Sublime Text 4
+  publisher: Sublime HQ Pty Ltd
+  author: Sublime HQ Pty Ltd
+  homepage: https://www.sublimetext.com
+  license: Proprietary
+  packages:
+    windows:
+      choco: sublimetext4
+      winget: SublimeHQ.SublimeText.4
+    linux:
+      debGet: sublime-text
+- id: com.codesector.TeraCopy
+  name: TeraCopy
+  publisher: Code Sector
+  author: Code Sector
+  homepage: https://www.codesector.com/teracopy
+  license: Proprietary
+  packages:
+    windows:
+      choco: TeraCopy
+      scoop: teracopy-np
+      winget: CodeSector.TeraCopy
+- id: org.videolan.VLC
+  name: VLC media player
+  publisher: VideoLAN
+  author: VideoLAN
+  homepage: https://www.videolan.org/vlc/
+  license: GPL-2.0
+  packages:
+    windows:
+      choco: vlc
+      winget: VideoLAN.VLC
+    linux:
+      apk: vlc
+      apt: vlc
+      dnf: vlc
+      flatpak: org.videolan.VLC
+    android:
+      play: org.videolan.vlc
+- id: org.gnu.Wget
+  name: Wget
+  publisher: The GNU Project
+  author: The GNU Project
+  homepage: https://www.gnu.org/software/wget/
+  license: GPL-3.0-or-later
+  packages:
+    windows:
+      choco: wget
+      scoop: wget
+      winget: JernejSimoncic.Wget
+    linux:
+      apk: wget
+      apt: wget
+      dnf: wget
+- id: com.winaero.WinaeroTweaker
+  name: WinAero Tweaker
+  publisher: Winaero
+  author:
+    - Winaero
+    - Sergey Tkachenko
+  homepage: https://winaero.com/
+  license: Proprietary
+  packages:
+    windows:
+      choco: winaero-tweaker
+- id: info.wincompose.WinCompose
+  name: WinCompose
+  publisher: Sam Hocevar
+  author: Sam Hocevar
+  homepage: http://wincompose.info/
+  license: WTFPL
+  packages:
+    windows:
+      choco: wincompose
+      scoop: wincompose
+      winget: SamHocevar.WinCompose
+- id: com.win-rar.WinRAR
+  name: WinRAR
+  publisher: win.rar GmbH
+  author: RARLab
+  homepage: https://www.win-rar.com/start.html?&L=0
+  license: Proprietary
+  packages:
+    windows:
+      choco: winrar
+      scoop: winrar
+      winget: RARLab.WinRAR
+    android:
+      play: com.winrar.rar
+- id: com.microsoft.WindowsTerminal
+  name: Windows Terminal
+  publisher: Microsoft Corporation
+  author: Microsoft
+  homepage: https://docs.microsoft.com/windows/terminal/
+  license: MIT
+  packages:
+    windows:
+      choco: microsoft-windows-terminal
+      winget: Microsoft.WindowsTerminal
+- id: com.diskanalyser.WizTree
+  name: WizTree
+  publisher: Antibody Software
+  author: Antibody Software
+  homepage: https://diskanalyzer.com
+  license: Proprietary
+  packages:
+    windows:
+      choco: wiztree
+      scoop: wiztree
+      winget: AntibodySoftware.WizTree
+- id: io.balena.Etcher
+  name: balenaEtcher
+  publisher: Balena Inc.
+  author: Balena Inc.
+  homepage: https://www.balena.io/etcher
+  license: Apache License 2.0
+  packages:
+    windows:
+      choco: etcher
+      winget: Balena.Etcher
+    linux:
+      debGet: balena-etcher-electron
+- id: com.calibre_ebook.calibre
+  name: calibre
+  publisher: Kovid Goyal
+  author: Kovid Goyal
+  homepage: https://calibre-ebook.com/
+  license: GPL-3.0-only
+  packages:
+    windows:
+      choco: calibre
+      scoop: calibre
+      winget: calibre.calibre
+    linux:
+      flatpak: com.calibre_ebook.calibre
+- id: se.curl.cURL
+  name: curl
+  publisher: cURL project
+  author: Daniel Stenberg
+  homepage: https://curl.se/
+  license: curl
+  packages:
+    windows:
+      choco: curl
+      scoop: curl
+    linux:
+      apk: curl
+      apt: curl
+      aur: curl
+      dnf: curl
+      nixpkgs: curl
+- id: com.github.gerardog.gsudo
+  name: gsudo
+  publisher: gerardog
+  author: Gerardo Grignoli
+  homepage: https://github.com/gerardog/gsudo
+  license: MIT
+  packages:
+    windows:
+      choco: gsudo
+      scoop: gsudo
+      winget: gerardog.gsudo
+- id: com.apple.iTunes
+  name: iTunes
+  publisher: Apple Inc.
+  author: Apple Inc.
+  homepage: https://www.apple.com/itunes/
+  license: Proprietary
+  packages:
+    windows:
+      choco: iTunes
+      winget: Apple.iTunes
+- id: io.github.zyedidia.Micro
+  name: micro
+  publisher: zyedidia
+  author: zyedidia
+  homepage: https://micro-editor.github.io/
+  license: MIT
+  packages:
+    windows:
+      choco: micro
+      scoop: micro
+    linux:
+      debGet: micro
+- id: org.gnu.nano
+  name: nano
+  publisher: The GNU Project
+  author: The GNU Project
+  homepage: https://www.nano-editor.org/
+  license: GPL-3.0
+  packages:
+    windows:
+      choco: nano
+      scoop: nano
+    linux:
+      apk: nano
+      apt: nano
+      dnf: nano
+    android:
+      pkg: nano
+- id: sh.ppy.osu
+  name: osu!
+  publisher: ppy Pty Ltd
+  author: Dean "peppy" Herbert
+  homepage: https://osu.ppy.sh
+  license: MIT
+  packages:
+    windows:
+      winget: Peppy.Osu!
+- id: org.qbittorrent.qBittorrent
+  name: qBittorrent
+  publisher: The qBittorrent project
+  author: Sledgehammer999 <sledgehammer999@qbittorrent.org>
+  homepage: https://www.qbittorrent.org/
+  license: GPL-2.0
+  packages:
+    windows:
+      choco: qbittorrent
+      scoop: qbittorrent
+      winget: qBittorrent.qBittorrent
+- id: rs.starship.starship
+  name: starship
+  publisher: Starship Contributors
+  author: Starship Contributors
+  homepage: https://starship.rs/
+  license: ISC License
+  packages:
+    windows:
+      choco: starship
+      scoop: starship
+      winget: Starship.Starship
+    linux:
+      apk: starship
+      aur: starship
+      brew: starship
+      dnf: starship
+      nixpkgs: starship
+      pacstall: starship-bin
+    android:
+      pkg: starship
+- id: com.github.kiedtl.winfetch
+  name: winfetch
+  publisher: kiedtl
+  author: kiedtl
+  homepage: https://github.com/kiedtl/winfetch
+  license: MIT
+  packages:
+    windows:
+      scoop: winfetch
+- id: com.fishshell.fish
+  name: Fish
+  publisher: fish-shell
+  author: fish-shell
+  homepage: https://fishshell.com/
+  license: GPL-2.0
+  packages:
+    linux:
+      apk: fish
+      apt: fish
+      aur: fish
+      brew: fish
+      dnf: fish
+      nixpkgs: fish
+    android:
+      pkg: fish
+- id: com.gitlab.volitank.nala
+  name: nala
+  publisher: volitank
+  author: volitank
+  homepage: https://gitlab.com/volian/nala
+  license: GPL-3.0
+  packages:
+    linux:
+      apt: nala
+      debGet: nala
+      pacstall: nala-deb
+- id: com.whatsapp.WhatsApp
+  name: WhatsApp
+  publisher: WhatsApp Inc.
+  author: WhatsApp Inc.
+  homepage: https://www.whatsapp.com/
+  license: Proprietary
+  packages:
+    windows:
+      choco: WhatsApp
+      scoop: whatsapp
+      winget: WhatsApp.WhatsApp
+    android:
+      pkg: com.whatsapp
+- id: com.github.eneshecan.WhatsAppForLinux
+  name: WhatsApp for Linux
+  publisher: Enes Hecan
+  author: Enes Hecan
+  homepage: https://github.com/eneshecan/whatsapp-for-linux
+  license: GPL-3.0
+  packages:
+    linux:
+      aur: whatsapp-for-linux
+      debGet: whatsapp-for-linux
+      flatpak: com.github.eneshecan.WhatsAppForLinux
+      nixpkgs: whatsapp-for-linux
+      snap: whatsapp-for-linux
+- id: info.febvre.Komikku
+  name: Komikku
+  publisher: Valéry Febvre
+  author: Valéry Febvre
+  homepage: https://gitlab.com/valos/Komikku
+  license: GPL-3.0
+  packages:
+    linux:
+      aur: komikku
+      dnf: komikku
+      flatpak: info.febvre.Komikku
+- id: sh.nushell.nu
+  name: Nushell
+  publisher: The Nushell Project Developers
+  author: The Nushell Project Developers
+  homepage: https://www.nushell.sh/
+  license: MIT
+  packages:
+    windows:
+      choco: nushell
+      scoop: nu
+      winget: Nushell.Nushell
+    linux:
+      brew: nushell
+- id: app.spicetify.spicetify
+  name: Spicetify
+  publisher: Spicetify
+  author: Spicetify
+  homepage: https://spicetify.app
+  license: LGPL-2.1
+  packages:
+    windows:
+      choco: spicetify-cli
+      scoop: spicetify

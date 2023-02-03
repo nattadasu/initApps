@@ -1,0 +1,36 @@
+- name: M5
+  author: amdpastrana
+  platform: windows
+  appVersion: '>= 5.00'
+  uri: https://www.aimp.ru/?do=catalog.download&id=1246
+  version: 1.2.8
+  tone:
+    - dark
+    - light
+  surface: mat
+  interface: 4k
+  description: |
+    Inspired by AIMP5 SKIN and A4 from ELECTRON!CK
+- name: FL Skino 12
+  author: Magis
+  platform: windows
+  appVersion: '>= 4.00'
+  uri: https://www.aimp.ru/?do=catalog.download&id=855
+  version: 1.7.8
+  tone:
+    - dark
+  surface: mat
+  interface: 4k
+  description: null
+- name: Mareala 4
+  author: amdpastrana
+  platform: windows
+  appVersion: '>= 4.60'
+  uri: https://www.aimp.ru/?do=catalog.download&id=1231
+  version: 4
+  tone:
+    - dark
+    - light
+  surface: mat
+  interface: touch
+  description: null

@@ -28,3 +28,13 @@
 
 # Used for config files in several programs/packages that just installed
 !config/**
+
+
+# ignore old files
+Windows.bat
+Windows.ps1
+Windows_new.ps1
+Linux
+scripts/*
+config/*
+Upgrade.ps1

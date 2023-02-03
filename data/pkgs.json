@@ -1,0 +1,2401 @@
+[
+  {
+    "id": "org.7-zip.7-Zip",
+    "name": "7-Zip",
+    "publisher": "Igor Pavlov",
+    "author": "Igor Pavlov",
+    "homepage": "https://www.7-zip.org",
+    "license": "LGPL",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "7zip",
+        "scoop": null,
+        "winget": "7zip.7zip"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "ru.aimp.AIMP",
+    "name": "AIMP",
+    "publisher": "AIMP DevTeam",
+    "author": "Artem Izmaylov",
+    "homepage": "https://www.aimp.ru",
+    "license": "Proprietary",
+    "available": [
+      "Windows",
+      "Android"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "aimp",
+        "scoop": "aimp",
+        "winget": "AIMP.AIMP"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": "com.aimp.player"
+      }
+    }
+  },
+  {
+    "id": "com.aomeitech.PartitionAssistant",
+    "name": "AOMEI Partition Assistant",
+    "publisher": "AOMEI International Network Limited.",
+    "author": "AOMEI International Network Limited.",
+    "homepage": "https://www.aomeitech.com/aomei-partition-assistant.html",
+    "license": "Proprietary",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "partition-assistant-standard",
+        "scoop": null,
+        "winget": "AOMEI.PartitionAssistant"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "org.audacityteam.Audacity",
+    "name": "Audacity",
+    "publisher": "Audacity Team",
+    "author": "Audacity Team",
+    "homepage": "https://www.audacityteam.org/",
+    "license": "GPL-2.0-or-later",
+    "available": [
+      "Windows",
+      "Linux"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "audacity",
+        "scoop": "audacity",
+        "winget": "Audacity.Audacity"
+      },
+      "linux": {
+        "apk": "audacity",
+        "appimage": null,
+        "apt": "audacity",
+        "aur": "audacity-git",
+        "brew": null,
+        "debGet": null,
+        "dnf": "audacity",
+        "flatpak": "org.audacityteam.Audacity",
+        "nixpkgs": "audacity",
+        "pacstall": null,
+        "snap": "audacity"
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.autohotkey.AutoHotkey",
+    "name": "AutoHotkey",
+    "publisher": "Lexikos",
+    "author": "Steve Gray",
+    "homepage": "https://autohotkey.com",
+    "license": "GPL-2.0",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "autohotkey",
+        "scoop": "autohotkey",
+        "winget": "Lexikos.AutoHotkey"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "io.balena.Etcher",
+    "name": "balenaEtcher",
+    "publisher": "Balena Inc.",
+    "author": "Balena Inc.",
+    "homepage": "https://www.balena.io/etcher",
+    "license": "Apache License 2.0",
+    "available": [
+      "Windows",
+      "Linux"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "etcher",
+        "scoop": null,
+        "winget": "Balena.Etcher"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": "balena-etcher-electron",
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "eu.betterbird.Betterbird",
+    "name": "Betterbird",
+    "publisher": "Betterbird-Team",
+    "author": "Betterbird-Team",
+    "homepage": "https://betterbird.eu",
+    "license": "MPL-2.0",
+    "available": [
+      "Windows",
+      "Linux"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "betterbird",
+        "scoop": null,
+        "winget": "Betterbird.Betterbird"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": "betterbird-bin",
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": "eu.betterbird.Betterbird",
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.bitwarden.Bitwarden",
+    "name": "Bitwarden",
+    "publisher": "Bitwarden Inc.",
+    "author": "Bitwarden Inc.",
+    "homepage": "https://bitwarden.com/download/",
+    "license": "GPL-3.0 or Bitwarden-1.0",
+    "available": [
+      "Windows",
+      "Linux",
+      "Android"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "bitwarden",
+        "scoop": "bitwarden",
+        "winget": "Bitwarden.Bitwarden"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": "bitwarden-git",
+        "brew": null,
+        "debGet": "bitwarden",
+        "dnf": null,
+        "flatpak": "com.bitwarden.desktop",
+        "nixpkgs": "bitwarden",
+        "pacstall": "bitwarden-deb",
+        "snap": "bitwarden"
+      },
+      "android": {
+        "pkg": null,
+        "play": "com.x8bit.bitwarden"
+      }
+    }
+  },
+  {
+    "id": "com.brave.Browser",
+    "name": "Brave",
+    "publisher": "Brave Software Inc",
+    "author": "Brave Software, Inc.",
+    "homepage": "https://brave.com/download/",
+    "license": "MPL-2.0",
+    "available": [
+      "Windows",
+      "Linux",
+      "Android"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "brave",
+        "scoop": "brave",
+        "winget": "Brave.Brave"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": "brave",
+        "dnf": null,
+        "flatpak": "com.brave.Browser",
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": "com.brave.browser"
+      }
+    }
+  },
+  {
+    "id": "com.calibre_ebook.calibre",
+    "name": "calibre",
+    "publisher": "Kovid Goyal",
+    "author": "Kovid Goyal",
+    "homepage": "https://calibre-ebook.com/",
+    "license": "GPL-3.0-only",
+    "available": [
+      "Windows",
+      "Linux"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "calibre",
+        "scoop": "calibre",
+        "winget": "calibre.calibre"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": "com.calibre_ebook.calibre",
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "io.github.chrisant996.Clink",
+    "name": "Clink",
+    "publisher": "Christopher Antos",
+    "author": "Chris Antos",
+    "homepage": "https://chrisant996.github.io/clink/",
+    "license": "GPL-3.0",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "clink",
+        "scoop": "clink",
+        "winget": "chrisant996.Clink"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.cloudflare.warp",
+    "name": "Cloudflare WARP",
+    "publisher": "Cloudflare, Inc.",
+    "author": "Cloudflare, Inc.",
+    "homepage": "https://one.one.one.one/",
+    "license": "Proprietary",
+    "available": [
+      "Windows",
+      "Android"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "warp",
+        "scoop": null,
+        "winget": "Cloudflare.Warp"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": "com.cloudflare.onedotonedotonedotone"
+      }
+    }
+  },
+  {
+    "id": "se.curl.cURL",
+    "name": "curl",
+    "publisher": "cURL project",
+    "author": "Daniel Stenberg",
+    "homepage": "https://curl.se/",
+    "license": "curl",
+    "available": [
+      "Windows",
+      "Linux"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "curl",
+        "scoop": "curl",
+        "winget": null
+      },
+      "linux": {
+        "apk": "curl",
+        "appimage": null,
+        "apt": "curl",
+        "aur": "curl",
+        "brew": null,
+        "debGet": null,
+        "dnf": "curl",
+        "flatpak": null,
+        "nixpkgs": "curl",
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.discordapp.Discord",
+    "name": "Discord",
+    "publisher": "Discord Inc.",
+    "author": "Discord Inc.",
+    "homepage": "https://discord.com",
+    "license": "Proprietary",
+    "available": [
+      "Windows",
+      "Linux",
+      "Android"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "discord",
+        "scoop": "discord",
+        "winget": "Discord.Discord"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": "discord",
+        "dnf": null,
+        "flatpak": "com.discordapp.Discord",
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": "com.discord"
+      }
+    }
+  },
+  {
+    "id": "app.eartrumpet.EarTrumpet",
+    "name": "EarTrumpet",
+    "publisher": "File-New-Project",
+    "author": "File-New-Project",
+    "homepage": "https://eartrumpet.app",
+    "license": "MIT",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "eartrumpet",
+        "scoop": "eartrumpet",
+        "winget": "File-New-Project.EarTrumpet"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.fishshell.fish",
+    "name": "Fish",
+    "publisher": "fish-shell",
+    "author": "fish-shell",
+    "homepage": "https://fishshell.com/",
+    "license": "GPL-2.0",
+    "available": [
+      "Linux",
+      "Android"
+    ],
+    "packages": {
+      "windows": {
+        "choco": null,
+        "scoop": null,
+        "winget": null
+      },
+      "linux": {
+        "apk": "fish",
+        "appimage": null,
+        "apt": "fish",
+        "aur": "fish",
+        "brew": "fish",
+        "debGet": null,
+        "dnf": "fish",
+        "flatpak": null,
+        "nixpkgs": "fish",
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": "fish",
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.git-scm.git",
+    "name": "Git",
+    "publisher": "The Git Development Community",
+    "author": "Johannes Schindelin",
+    "homepage": "https://git-scm.com",
+    "license": "GPL-2.0",
+    "available": [
+      "Windows",
+      "Linux",
+      "Android"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "git",
+        "scoop": "git",
+        "winget": "Git.Git"
+      },
+      "linux": {
+        "apk": "git",
+        "appimage": null,
+        "apt": "git",
+        "aur": "git",
+        "brew": null,
+        "debGet": null,
+        "dnf": "git",
+        "flatpak": null,
+        "nixpkgs": "git",
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": "git",
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.github.gh",
+    "name": "GitHub CLI",
+    "publisher": "GitHub, Inc.",
+    "author": "GitHub, Inc.",
+    "homepage": "https://github.com/cli/cli",
+    "license": "MIT",
+    "available": [
+      "Windows",
+      "Linux",
+      "Android"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "gh",
+        "scoop": "gh",
+        "winget": "GitHub.cli"
+      },
+      "linux": {
+        "apk": "gh",
+        "appimage": null,
+        "apt": null,
+        "aur": "github-cli",
+        "brew": null,
+        "debGet": "gh",
+        "dnf": "gh",
+        "flatpak": null,
+        "nixpkgs": "gh",
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": "gh",
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.axosoft.GitKraken",
+    "name": "GitKraken",
+    "publisher": "GitKraken",
+    "author": "Axosoft, LLC",
+    "homepage": "https://www.gitkraken.com/git-client",
+    "license": "Proprietary",
+    "available": [
+      "Windows",
+      "Linux"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "gitkraken",
+        "scoop": "gitkraken",
+        "winget": "Axosoft.GitKraken"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": "gitkraken",
+        "dnf": null,
+        "flatpak": "com.axosoft.GitKraken",
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": "gitkraken"
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.google.Chrome",
+    "name": "Google Chrome",
+    "publisher": "Google LLC",
+    "author": "Google LLC",
+    "homepage": "https://www.google.com/intl/en_us/chrome/",
+    "license": "Proprietary",
+    "available": [
+      "Windows",
+      "Linux",
+      "Android"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "GoogleChrome",
+        "scoop": null,
+        "winget": "Google.Chrome"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": "google-chrome-stable",
+        "dnf": null,
+        "flatpak": "com.google.Chrome",
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": "com.android.chrome"
+      }
+    }
+  },
+  {
+    "id": "com.google.Drive",
+    "name": "Google Drive",
+    "publisher": "Google LLC",
+    "author": "Google LLC",
+    "homepage": "https://www.google.com/drive/download/",
+    "license": "Proprietary",
+    "available": [
+      "Windows",
+      "Android"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "googledrive",
+        "scoop": null,
+        "winget": "Google.Drive"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": "com.google.android.apps.docs"
+      }
+    }
+  },
+  {
+    "id": "jp.co.google.IME",
+    "name": "Google Japanese Input",
+    "publisher": "Google Inc.",
+    "author": "Google Inc.",
+    "homepage": "https://www.google.co.jp/ime/",
+    "license": "Proprietary",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "GoogleJapaneseInput",
+        "scoop": null,
+        "winget": "Google.JapaneseIME"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.github.gerardog.gsudo",
+    "name": "gsudo",
+    "publisher": "gerardog",
+    "author": "Gerardo Grignoli",
+    "homepage": "https://github.com/gerardog/gsudo",
+    "license": "MIT",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "gsudo",
+        "scoop": "gsudo",
+        "winget": "gerardog.gsudo"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.apple.iTunes",
+    "name": "iTunes",
+    "publisher": "Apple Inc.",
+    "author": "Apple Inc.",
+    "homepage": "https://www.apple.com/itunes/",
+    "license": "Proprietary",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "iTunes",
+        "scoop": null,
+        "winget": "Apple.iTunes"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.oracle.JRE",
+    "name": "Java SE Development Kit 17",
+    "publisher": "Oracle Corporation",
+    "author": "Oracle Corporation",
+    "homepage": "https://www.oracle.com/java/",
+    "license": "Proprietary",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": null,
+        "scoop": null,
+        "winget": "Oracle.JDK.17"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "org.kde.Connect",
+    "name": "KDE Connect",
+    "publisher": "KDE e.V.",
+    "author": "KDE e.V.",
+    "homepage": "https://kdeconnect.kde.org/",
+    "license": "GPL-2.0 or GPL-3.0",
+    "available": [
+      "Windows",
+      "Android"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "kdeconnect-kde",
+        "scoop": null,
+        "winget": "KDE.KDEConnect"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": "org.kde.kdeconnect_tp"
+      }
+    }
+  },
+  {
+    "id": "info.febvre.Komikku",
+    "name": "Komikku",
+    "publisher": "Valéry Febvre",
+    "author": "Valéry Febvre",
+    "homepage": "https://gitlab.com/valos/Komikku",
+    "license": "GPL-3.0",
+    "available": [
+      "Linux"
+    ],
+    "packages": {
+      "windows": {
+        "choco": null,
+        "scoop": null,
+        "winget": null
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": "komikku",
+        "brew": null,
+        "debGet": null,
+        "dnf": "komikku",
+        "flatpak": "info.febvre.Komikku",
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "org.krita.Krita",
+    "name": "Krita",
+    "publisher": "Krita Foundation",
+    "author": "Krita Foundation",
+    "homepage": "https://krita.org/",
+    "license": "GPL-3.0",
+    "available": [
+      "Windows",
+      "Linux",
+      "Android"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "krita",
+        "scoop": "krita",
+        "winget": "KDE.Krita"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": "org.kde.krita",
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": "org.krita"
+      }
+    }
+  },
+  {
+    "id": "org.libreoffice.LibreOffice",
+    "name": "LibreOffice",
+    "publisher": "The Document Foundation",
+    "author": "The Document Foundation",
+    "homepage": "https://www.libreoffice.org/",
+    "license": "MPL-2.0",
+    "available": [
+      "Windows",
+      "Linux"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "libreoffice",
+        "scoop": "libreoffice",
+        "winget": "TheDocumentFoundation.LibreOffice"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": "libreoffice",
+        "aur": "libreoffice-still",
+        "brew": null,
+        "debGet": null,
+        "dnf": "libreoffice",
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "io.github.zyedidia.Micro",
+    "name": "micro",
+    "publisher": "zyedidia",
+    "author": "zyedidia",
+    "homepage": "https://micro-editor.github.io/",
+    "license": "MIT",
+    "available": [
+      "Windows",
+      "Linux"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "micro",
+        "scoop": "micro",
+        "winget": null
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": "micro",
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.microsoft.Edge",
+    "name": "Microsoft Edge",
+    "publisher": "Microsoft Corporation",
+    "author": "Microsoft Corporation",
+    "homepage": "https://www.microsoft.com/en-us/edge",
+    "license": "MIT",
+    "available": [
+      "Windows",
+      "Android"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "microsoft-edge",
+        "scoop": null,
+        "winget": "Microsoft.Edge"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": "com.microsoft.emmx"
+      }
+    }
+  },
+  {
+    "id": "com.microsoft.OneDrive",
+    "name": "Microsoft OneDrive",
+    "publisher": "Microsoft Corporation",
+    "author": "Microsoft Corporation",
+    "homepage": "https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage",
+    "license": "Proprietary",
+    "available": [
+      "Windows",
+      "Android"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "onedrive",
+        "scoop": null,
+        "winget": "Microsoft.OneDrive"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": "com.microsoft.skydrive"
+      }
+    }
+  },
+  {
+    "id": "com.visualstudio.code",
+    "name": "Microsoft Visual Studio Code",
+    "publisher": "Microsoft Corporation",
+    "author": "Microsoft Corporation",
+    "homepage": "https://code.visualstudio.com",
+    "license": "Microsoft Software License",
+    "available": [
+      "Windows",
+      "Linux"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "vscode",
+        "scoop": null,
+        "winget": "Microsoft.VisualStudioCode"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": "code",
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "org.mozilla.firefox",
+    "name": "Mozilla Firefox",
+    "publisher": "Mozilla",
+    "author": "Mozilla Foundation",
+    "homepage": "https://www.mozilla.org/en-US/firefox/",
+    "license": "MPL-2.0",
+    "available": [
+      "Windows",
+      "Linux",
+      "Android"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "Firefox",
+        "scoop": null,
+        "winget": "Mozilla.Firefox"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": "org.mozilla.firefox",
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": "firefox"
+      },
+      "android": {
+        "pkg": null,
+        "play": "org.mozilla.firefox"
+      }
+    }
+  },
+  {
+    "id": "com.musicbee.MusicBee",
+    "name": "MusicBee",
+    "publisher": "Steven Mayall",
+    "author": "Steven Mayall",
+    "homepage": "https://getmusicbee.com/",
+    "license": "Proprietary",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "musicbee",
+        "scoop": "musicbee",
+        "winget": null
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.gitlab.volitank.nala",
+    "name": "nala",
+    "publisher": "volitank",
+    "author": "volitank",
+    "homepage": "https://gitlab.com/volian/nala",
+    "license": "GPL-3.0",
+    "available": [
+      "Linux"
+    ],
+    "packages": {
+      "windows": {
+        "choco": null,
+        "scoop": null,
+        "winget": null
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": "nala",
+        "aur": null,
+        "brew": null,
+        "debGet": "nala",
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": "nala-deb",
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "org.gnu.nano",
+    "name": "nano",
+    "publisher": "The GNU Project",
+    "author": "The GNU Project",
+    "homepage": "https://www.nano-editor.org/",
+    "license": "GPL-3.0",
+    "available": [
+      "Windows",
+      "Linux",
+      "Android"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "nano",
+        "scoop": "nano",
+        "winget": null
+      },
+      "linux": {
+        "apk": "nano",
+        "appimage": null,
+        "apt": "nano",
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": "nano",
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": "nano",
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "org.nodejs.LTS",
+    "name": "Node.js LTS",
+    "publisher": "Node.js Foundation",
+    "author": "OpenJS Foundation",
+    "homepage": "https://nodejs.org",
+    "license": "MIT",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "nodejs-lts",
+        "scoop": null,
+        "winget": "OpenJS.NodeJS.LTS"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "org.notepad-plus-plus.Notepad++",
+    "name": "Notepad++",
+    "publisher": "Notepad++ Team",
+    "author": "Don Ho",
+    "homepage": "https://notepad-plus-plus.org",
+    "license": "GPL-2.0",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "notepadplusplus",
+        "scoop": "notepadplusplus",
+        "winget": "Notepad++.Notepad++"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "sh.nushell.nu",
+    "name": "Nushell",
+    "publisher": "The Nushell Project Developers",
+    "author": "The Nushell Project Developers",
+    "homepage": "https://www.nushell.sh/",
+    "license": "MIT",
+    "available": [
+      "Windows",
+      "Linux"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "nushell",
+        "scoop": "nu",
+        "winget": "Nushell.Nushell"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": "nushell",
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "sh.ppy.osu",
+    "name": "osu!",
+    "publisher": "ppy Pty Ltd",
+    "author": "Dean \"peppy\" Herbert",
+    "homepage": "https://osu.ppy.sh",
+    "license": "MIT",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": null,
+        "scoop": null,
+        "winget": "Peppy.Osu!"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.dotpdn.PaintDotNet",
+    "name": "Paint.NET",
+    "publisher": "dotPDN LLC",
+    "author": "dotPDN LLC",
+    "homepage": "https://www.getpaint.net/",
+    "license": "Proprietary",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "paint.net",
+        "scoop": "paint.net",
+        "winget": null
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "org.pandoc.Pandoc",
+    "name": "Pandoc",
+    "publisher": "John MacFarlane",
+    "author": "John Mac Farlane",
+    "homepage": "https://pandoc.org",
+    "license": "GPLv2",
+    "available": [
+      "Windows",
+      "Linux"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "pandoc",
+        "scoop": "pandoc",
+        "winget": "JohnMacFarlane.Pandoc"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": "pandoc",
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "io.github.peazip.PeaZip",
+    "name": "PeaZip",
+    "publisher": "Giorgio Tani",
+    "author": "Giorgio Tani",
+    "homepage": "https://peazip.github.io",
+    "license": "LGPL3",
+    "available": [
+      "Windows",
+      "Linux"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "peazip",
+        "scoop": "peazip",
+        "winget": "Giorgiotani.Peazip"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": "io.github.peazip.Peazip",
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.github.PintaProject.Pinta",
+    "name": "Pinta",
+    "publisher": "Pinta Community",
+    "author": "Pinta Community",
+    "homepage": "https://pinta-project.com",
+    "license": "MIT",
+    "available": [
+      "Windows",
+      "Linux"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "Pinta",
+        "scoop": "pinta",
+        "winget": "Pinta.Pinta"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": "com.github.PintaProject.Pinta",
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "net.daum.PotPlayer",
+    "name": "PotPlayer",
+    "publisher": "Kakao Corp.",
+    "author": "Kakao Corp.",
+    "homepage": "https://potplayer.daum.net/",
+    "license": "Proprietary",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "potplayer",
+        "scoop": "potplayer",
+        "winget": "Daum.PotPlayer"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.microsoft.PowerShellCore",
+    "name": "PowerShell",
+    "publisher": "Microsoft Corporation",
+    "author": "Microsoft Corporation",
+    "homepage": "https://microsoft.com/PowerShell",
+    "license": "MIT",
+    "available": [
+      "Windows",
+      "Linux"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "powershell-core",
+        "scoop": null,
+        "winget": "Microsoft.PowerShell"
+      },
+      "linux": {
+        "apk": "powershell",
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": "powershell",
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.microsoft.PowerToys",
+    "name": "PowerToys",
+    "publisher": "Microsoft Corporation",
+    "author": "Microsoft Corporation",
+    "homepage": "https://github.com/microsoft/PowerToys",
+    "license": "MIT",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": null,
+        "scoop": "powertoys-np",
+        "winget": "Microsoft.PowerToys"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "org.python.Python3",
+    "name": "Python 3",
+    "publisher": "Python Software Foundation",
+    "author": "Python Software Foundation",
+    "homepage": "https://www.python.org",
+    "license": "PSF LICENSE AGREEMENT FOR PYTHON",
+    "available": [
+      "Windows",
+      "Linux"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "python3",
+        "scoop": null,
+        "winget": "Python.Python.3.9"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": "python3",
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "org.qbittorrent.qBittorrent",
+    "name": "qBittorrent",
+    "publisher": "The qBittorrent project",
+    "author": "Sledgehammer999 <sledgehammer999@qbittorrent.org>",
+    "homepage": "https://www.qbittorrent.org/",
+    "license": "GPL-2.0",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "qbittorrent",
+        "scoop": "qbittorrent",
+        "winget": "qBittorrent.qBittorrent"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "info.smplayer.SMPlayer",
+    "name": "SMPlayer",
+    "publisher": "Ricardo Villalba",
+    "author": "Ricardo Villalba",
+    "homepage": "https://www.smplayer.info",
+    "license": "GPL-2.0-only",
+    "available": [
+      "Windows",
+      "Linux"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "smplayer",
+        "scoop": "smplayer",
+        "winget": "SMPlayer.SMPlayer"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": "info.smplayer.SMPlayer",
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "app.spicetify.spicetify",
+    "name": "Spicetify",
+    "publisher": "Spicetify",
+    "author": "Spicetify",
+    "homepage": "https://spicetify.app",
+    "license": "LGPL-2.1",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "spicetify-cli",
+        "scoop": "spicetify",
+        "winget": null
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.spotify.Client",
+    "name": "Spotify",
+    "publisher": "Spotify AB",
+    "author": "Spotify AB",
+    "homepage": "https://www.spotify.com/us/download/windows/",
+    "license": "Proprietary",
+    "available": [
+      "Windows",
+      "Linux",
+      "Android"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "spotify",
+        "scoop": "spotify",
+        "winget": "Spotify.Spotify"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": "spotify-client",
+        "dnf": null,
+        "flatpak": "com.spotify.Client",
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": "com.spotify.music"
+      }
+    }
+  },
+  {
+    "id": "rs.starship.starship",
+    "name": "starship",
+    "publisher": "Starship Contributors",
+    "author": "Starship Contributors",
+    "homepage": "https://starship.rs/",
+    "license": "ISC License",
+    "available": [
+      "Windows",
+      "Linux",
+      "Android"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "starship",
+        "scoop": "starship",
+        "winget": "Starship.Starship"
+      },
+      "linux": {
+        "apk": "starship",
+        "appimage": null,
+        "apt": null,
+        "aur": "starship",
+        "brew": "starship",
+        "debGet": null,
+        "dnf": "starship",
+        "flatpak": null,
+        "nixpkgs": "starship",
+        "pacstall": "starship-bin",
+        "snap": null
+      },
+      "android": {
+        "pkg": "starship",
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.startisback.StartAllBack",
+    "name": "StartAllBack",
+    "publisher": "startisback.com",
+    "author": "Tihiy",
+    "homepage": "https://www.startallback.com/",
+    "license": "Proprietary",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": null,
+        "scoop": null,
+        "winget": "StartIsBack.StartAllBack"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.sublimetext.four",
+    "name": "Sublime Text 4",
+    "publisher": "Sublime HQ Pty Ltd",
+    "author": "Sublime HQ Pty Ltd",
+    "homepage": "https://www.sublimetext.com",
+    "license": "Proprietary",
+    "available": [
+      "Windows",
+      "Linux"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "sublimetext4",
+        "scoop": null,
+        "winget": "SublimeHQ.SublimeText.4"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": "sublime-text",
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.codesector.TeraCopy",
+    "name": "TeraCopy",
+    "publisher": "Code Sector",
+    "author": "Code Sector",
+    "homepage": "https://www.codesector.com/teracopy",
+    "license": "Proprietary",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "TeraCopy",
+        "scoop": "teracopy-np",
+        "winget": "CodeSector.TeraCopy"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "org.videolan.VLC",
+    "name": "VLC media player",
+    "publisher": "VideoLAN",
+    "author": "VideoLAN",
+    "homepage": "https://www.videolan.org/vlc/",
+    "license": "GPL-2.0",
+    "available": [
+      "Windows",
+      "Linux",
+      "Android"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "vlc",
+        "scoop": null,
+        "winget": "VideoLAN.VLC"
+      },
+      "linux": {
+        "apk": "vlc",
+        "appimage": null,
+        "apt": "vlc",
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": "vlc",
+        "flatpak": "org.videolan.VLC",
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": "org.videolan.vlc"
+      }
+    }
+  },
+  {
+    "id": "org.gnu.Wget",
+    "name": "Wget",
+    "publisher": "The GNU Project",
+    "author": "The GNU Project",
+    "homepage": "https://www.gnu.org/software/wget/",
+    "license": "GPL-3.0-or-later",
+    "available": [
+      "Windows",
+      "Linux"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "wget",
+        "scoop": "wget",
+        "winget": "JernejSimoncic.Wget"
+      },
+      "linux": {
+        "apk": "wget",
+        "appimage": null,
+        "apt": "wget",
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": "wget",
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.whatsapp.WhatsApp",
+    "name": "WhatsApp",
+    "publisher": "WhatsApp Inc.",
+    "author": "WhatsApp Inc.",
+    "homepage": "https://www.whatsapp.com/",
+    "license": "Proprietary",
+    "available": [
+      "Windows",
+      "Android"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "WhatsApp",
+        "scoop": "whatsapp",
+        "winget": "WhatsApp.WhatsApp"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": "com.whatsapp",
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.github.eneshecan.WhatsAppForLinux",
+    "name": "WhatsApp for Linux",
+    "publisher": "Enes Hecan",
+    "author": "Enes Hecan",
+    "homepage": "https://github.com/eneshecan/whatsapp-for-linux",
+    "license": "GPL-3.0",
+    "available": [
+      "Linux"
+    ],
+    "packages": {
+      "windows": {
+        "choco": null,
+        "scoop": null,
+        "winget": null
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": "whatsapp-for-linux",
+        "brew": null,
+        "debGet": "whatsapp-for-linux",
+        "dnf": null,
+        "flatpak": "com.github.eneshecan.WhatsAppForLinux",
+        "nixpkgs": "whatsapp-for-linux",
+        "pacstall": null,
+        "snap": "whatsapp-for-linux"
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.winaero.WinaeroTweaker",
+    "name": "WinAero Tweaker",
+    "publisher": "Winaero",
+    "author": [
+      "Winaero",
+      "Sergey Tkachenko"
+    ],
+    "homepage": "https://winaero.com/",
+    "license": "Proprietary",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "winaero-tweaker",
+        "scoop": null,
+        "winget": null
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "info.wincompose.WinCompose",
+    "name": "WinCompose",
+    "publisher": "Sam Hocevar",
+    "author": "Sam Hocevar",
+    "homepage": "http://wincompose.info/",
+    "license": "WTFPL",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "wincompose",
+        "scoop": "wincompose",
+        "winget": "SamHocevar.WinCompose"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.microsoft.WindowsTerminal",
+    "name": "Windows Terminal",
+    "publisher": "Microsoft Corporation",
+    "author": "Microsoft",
+    "homepage": "https://docs.microsoft.com/windows/terminal/",
+    "license": "MIT",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "microsoft-windows-terminal",
+        "scoop": null,
+        "winget": "Microsoft.WindowsTerminal"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.github.kiedtl.winfetch",
+    "name": "winfetch",
+    "publisher": "kiedtl",
+    "author": "kiedtl",
+    "homepage": "https://github.com/kiedtl/winfetch",
+    "license": "MIT",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": null,
+        "scoop": "winfetch",
+        "winget": null
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  },
+  {
+    "id": "com.win-rar.WinRAR",
+    "name": "WinRAR",
+    "publisher": "win.rar GmbH",
+    "author": "RARLab",
+    "homepage": "https://www.win-rar.com/start.html?&L=0",
+    "license": "Proprietary",
+    "available": [
+      "Windows",
+      "Android"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "winrar",
+        "scoop": "winrar",
+        "winget": "RARLab.WinRAR"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": "com.winrar.rar"
+      }
+    }
+  },
+  {
+    "id": "com.diskanalyser.WizTree",
+    "name": "WizTree",
+    "publisher": "Antibody Software",
+    "author": "Antibody Software",
+    "homepage": "https://diskanalyzer.com",
+    "license": "Proprietary",
+    "available": [
+      "Windows"
+    ],
+    "packages": {
+      "windows": {
+        "choco": "wiztree",
+        "scoop": "wiztree",
+        "winget": "AntibodySoftware.WizTree"
+      },
+      "linux": {
+        "apk": null,
+        "appimage": null,
+        "apt": null,
+        "aur": null,
+        "brew": null,
+        "debGet": null,
+        "dnf": null,
+        "flatpak": null,
+        "nixpkgs": null,
+        "pacstall": null,
+        "snap": null
+      },
+      "android": {
+        "pkg": null,
+        "play": null
+      }
+    }
+  }
+]

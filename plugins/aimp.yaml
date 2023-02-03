@@ -1,0 +1,22 @@
+- name: Windows 10 Media Control
+  author: JD
+  uri: https://www.aimp.ru/?do=catalog.download&id=1097
+  type: extensions
+  target:
+    - 32
+    - 64
+  appVer: '>= 4.50'
+  version: 2.0.3
+  description: |
+    Integrates AIMP to the Media Control of Windows 10, provides an ability to control playback and displays information about playing file.
+- name: Discord Presence
+  author: Exle
+  uri: https://www.aimp.ru/?do=catalog.download&id=970
+  type: extensions
+  target:
+    - 32
+    - 64
+  appVer: '>= 4.50'
+  version: 1.0.0.9
+  description: |
+    Показывает в Discord, что вы слушаете в AIMP

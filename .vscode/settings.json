@@ -1,0 +1,28 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "pkgs.json",
+                "packages/pkgs.json"
+            ],
+            "url": "./schema/pkgs.schema.json"
+        },
+        {
+            "fileMatch": [
+                "modules.json",
+                "packages/modules.json"
+            ],
+            "url": "./schema/modules.schema.json"
+        }
+    ],
+    "yaml.schemas": {
+        "./schema/pkgs.schema.json": [
+            "pkgs.yaml",
+            "packages/pkgs.yaml"
+        ],
+        "./schema/modules.schema.json": [
+            "modules.yaml",
+            "packages/modules.yaml"
+        ]
+    }
+}

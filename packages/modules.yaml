@@ -1,0 +1,131 @@
+node:
+  - name: npx
+    author: npm
+    description: execute npm package binaries
+    package: npx
+    repository: https://github.com/npm/npx
+    license: ISC
+    available:
+      - Windows
+      - Linux
+      - Android
+      - macOS
+    executables:
+      - npx
+    isolated: false
+
+pwsh:
+  # All modules are available from the PowerShell Gallery
+  - name: PSReadLine
+    author: Microsoft
+    description: >
+      A bash inspired readline implementation for PowerShell
+    package: PSReadLine
+    repository: https://github.com/PowerShell/PSReadLine
+    license: BSD-2-Clause
+    available:
+      - Windows
+      - Linux
+      - macOS
+  - name: powershell-yaml
+    author: cloudbase
+    description: >
+      A PowerShell module for parsing and emitting YAML
+    package: powershell-yaml
+    repository: https://github.com/cloudbase/powershell-yaml
+    license: Apache-2.0
+    available:
+      - Windows
+      - Linux
+      - macOS
+    executables:
+      - ConvertFrom-Yaml
+      - ConvertTo-Yaml
+  - name: PowerShell-Beautifer
+    author: DTW-DanWard
+    description: >
+      A whitespace reformatter and code cleaner for Windows PowerShell
+      and PowerShell Core
+    package: PowerShell-Beautifer
+    repository: https://github.com/DTW-DanWard/PowerShell-Beautifier
+    license: MIT
+    available:
+      - Windows
+      - Linux
+      - macOS
+    executables:
+      - Edit-DTWBeautifyScript
+
+python:
+  - name: Trackma
+    author: z411
+    description: >
+      A lightweight and simple program for updating and using lists on several media tracking websites.
+    package: Trackma
+    repository: https://github.com/z411/trackma
+    license: GPL-3.0
+    available:
+      - Linux
+      - Android
+      - macOS
+    executables:
+      - trackma
+      - trackma-qt
+      - trackma-gtk
+      - trackma-curses
+    isolated: false
+  - name: traktexport
+    author: Sean Breckenridge
+    description: Export your Movie/TV shows ratings and history from Trakts
+    package: traktexport
+    repository: https://github.com/seanbreckenridge/traktexport
+    license: MIT
+    available:
+      - Windows
+      - Linux
+      - Android
+    executables:
+      - traktexport
+    isolated: true
+  - name: pipx
+    author: pypa
+    description: A tool for installing and running Python applications in isolated environments
+    package: pipx
+    repository: https://github.com/pypa/pipx
+    license: MIT
+    available:
+      - Windows
+      - Linux
+      - Android
+      - macOS
+    executables:
+      - pipx
+    isolated: false
+  - name: waybackpy
+    author: akamhy
+    description: Wayback Machine API interface & a command-line tool
+    package: waybackpy
+    repository: https://github.com/akamhy/waybackpy
+    license: MIT
+    available:
+      - Windows
+      - Linux
+      - Android
+      - macOS
+    executables:
+      - waybackpy
+    isolated: true
+
+rust:
+  - name: lychee
+    author: lycheeverse
+    description: >
+      A fast, async, and parallel link checker written in Rust
+    package: lychee
+    repository: https://github.com/lycheeverse/lychee
+    license: MIT, Apache-2.0
+    available:
+      - Windows
+      - Linux
+    executables:
+      - lychee
